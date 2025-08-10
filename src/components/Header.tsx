@@ -11,7 +11,7 @@ const Header = () => {
         <div className="container">
           <Link href="/" className="navbar-brand d-flex align-items-center fw-bold">
             <Image
-              src="/sasa_logo_toka.png?v=2"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/sasa_logo_toka.png?v=2`}
               alt="@zawasasa logo"
               width={32}
               height={32}

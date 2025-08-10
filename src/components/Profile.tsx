@@ -16,7 +16,7 @@ const Profile = () => {
         <div className="row align-items-center">
           <div className="col-lg-4 text-center mb-4 mb-lg-0">
             <Image
-              src="/sasa_logo_toka.png?v=2"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/sasa_logo_toka.png?v=2`}
               alt="@zawasasa avatar"
               width={200}
               height={200}

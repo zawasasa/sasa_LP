@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
     // 静的エクスポートでは最適化を無効化
     unoptimized: true,
   },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: process.env.NODE_ENV === 'production' ? '/sasa_LP' : '',
+  },
 };
 
 export default nextConfig;
