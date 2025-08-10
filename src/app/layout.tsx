@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "小学校教員×プログラマー。GASやAIで現場の“困った”を解決。教育DX・業務効率化・組織開発を実践する人。",
     images: [
       {
-        url: "/sasa_logo_toka.png",
+        url: "/sasa_logo_toka.png?v=2",
         width: 512,
         height: 512,
         alt: "@zawasasa avatar",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "@zawasasa | 教育現場のDXクリエイター",
     description:
       "小学校教員×プログラマー。GASやAIで現場の“困った”を解決。教育DX・業務効率化・組織開発を実践する人。",
-    images: ["/sasa_logo_toka.png"],
+    images: ["/sasa_logo_toka.png?v=2"],
     creator: "@zawasasa",
   },
 };
