@@ -154,8 +154,8 @@ const Works = () => {
                 </ul>
               </div>
               <div className="card-footer">
-                <a href="https://note.com/hiroki_sasazawa" className="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">
-                  noteで詳細を見る
+                <a href="https://note.com/hiroki_sasazawa/n/na8c067780963" className="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                  記事を読む <i className="bi bi-box-arrow-up-right ms-1"></i>
                 </a>
               </div>
             </div>
@@ -297,6 +297,7 @@ const Works = () => {
                 <strong>最近の発信（note）</strong>
               </div>
               <ul className="mb-0">
+                <li><a href="https://note.com/hiroki_sasazawa/n/na8c067780963" target="_blank" rel="noopener noreferrer">提出物管理アプリをGoogleスプレッドシートとGASで自作したので試してみてね/無料ダウンロード</a></li>
                 <li><a href="https://note.com/hiroki_sasazawa/n/n1dc9f3bec197" target="_blank" rel="noopener noreferrer">小学校教師がCursorで社会科調べ学習のワークシートを作ってみた話</a></li>
                 <li><a href="https://note.com/hiroki_sasazawa/n/nf42de9823c44" target="_blank" rel="noopener noreferrer">学習振り返りアプリ v2（GAS×Dify×AIフィードバック）</a></li>
               </ul>
