@@ -1,135 +1,151 @@
-import React from 'react';
+import React from "react";
+import ScrollReveal from "./ScrollReveal";
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-5 bg-light">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-8 mx-auto text-center">
-            <h2 className="fw-bold mb-4">Skills & Expertise</h2>
-            <p className="lead text-muted mb-5">
-              教育現場の実践経験 × 最新技術の活用で、現実的なソリューションを提供
-            </p>
+    <section id="skills" className="lp-section lp-section--dark">
+      <div className="lp-container">
+        {/* Section Header */}
+        <ScrollReveal>
+          <div style={{ textAlign: "center", marginBottom: 64 }}>
+            <p className="text-overline">Skills &amp; Expertise</p>
+            <h2 className="heading-large">
+              教育現場の実践経験。
+              <br />
+              最新技術の活用力。
+            </h2>
           </div>
-        </div>
-        
-        <div className="row">
-          {/* 技術スキル */}
-          <div className="col-lg-6 mb-4">
-            <div className="card h-100 shadow-sm">
-              <div className="card-body">
-                <h4 className="card-title text-primary fw-bold">
-                  <i className="bi bi-code-slash me-2"></i>技術スキル
-                </h4>
-                <div className="row">
-                  <div className="col-md-6">
-                    <h6 className="fw-bold mt-3">プログラミング</h6>
-                    <ul className="list-unstyled">
-                      <li>• Google Apps Script (GAS)</li>
-                      <li>• JavaScript</li>
-                      <li>• HTML/CSS</li>
-                      <li>• スプレッドシート連携</li>
-                    </ul>
-                  </div>
-                  <div className="col-md-6">
-                    <h6 className="fw-bold mt-3">AI・ツール活用</h6>
-                    <ul className="list-unstyled">
-                      <li>• Gemini CLI</li>
-                      <li>• ChatGPT活用</li>
-                      <li>• Obsidian</li>
-                      <li>• Cursor</li>
-                    </ul>
-                  </div>
-                </div>
-                <h6 className="fw-bold mt-3">開発実績</h6>
-                <ul className="list-unstyled">
-                  <li>• 業務効率化WEBアプリ開発</li>
-                  <li>• データ可視化システム</li>
-                  <li>• 自動化ツール作成</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          {/* 教育専門性 */}
-          <div className="col-lg-6 mb-4">
-            <div className="card h-100 shadow-sm">
-              <div className="card-body">
-                <h4 className="card-title text-success fw-bold">
-                  <i className="bi bi-mortarboard me-2"></i>教育専門性
-                </h4>
-                <div className="row">
-                  <div className="col-md-6">
-                    <h6 className="fw-bold mt-3">教科・指導</h6>
-                    <ul className="list-unstyled">
-                      <li>• 社会科専門</li>
-                      <li>• 自己調整学習</li>
-                      <li>• 自由進度学習</li>
-                      <li>• ICT活用授業</li>
-                    </ul>
-                  </div>
-                  <div className="col-md-6">
-                    <h6 className="fw-bold mt-3">校務・運営</h6>
-                    <ul className="list-unstyled">
-                      <li>• 生徒指導</li>
-                      <li>• 校内研修企画</li>
-                      <li>• 校務文書作成</li>
-                      <li>• 学年運営</li>
-                    </ul>
-                  </div>
-                </div>
-                <h6 className="fw-bold mt-3">研究・学術</h6>
-                <ul className="list-unstyled">
-                  <li>• 学校組織開発研究</li>
-                  <li>• 教職大学院論文執筆</li>
-                  <li>• 働き方改革推進</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        </ScrollReveal>
 
-        {/* 強みの統合 */}
-        <div className="row mt-4">
-          <div className="col-lg-10 mx-auto">
-            <div className="card bg-primary text-white">
-              <div className="card-body text-center">
-                <h4 className="card-title fw-bold">🔥 独自の価値提案</h4>
-                <p className="card-text fs-5 mb-0">
-                  現場を知る教員 × プログラミングスキル × 組織開発の知見 = 
-                  <strong>実践的で持続可能なDXソリューション</strong>
+        {/* Background Image Area */}
+        <ScrollReveal direction="none" scale={0.92} duration={1.2}>
+          <div
+            className="bg-image-section"
+            style={{
+              minHeight: "60vh",
+              borderRadius: 24,
+              overflow: "hidden",
+              marginBottom: 64,
+            }}
+          >
+            <div
+              className="bg-image-section__image"
+              style={{
+                /* Replace with: backgroundImage: "url('/your-skills-bg.jpg')" */
+                background:
+                  "linear-gradient(160deg, #0c0c1d 0%, #1a1a2e 40%, #2d1b69 100%)",
+                backgroundAttachment: "scroll",
+              }}
+            />
+            <div className="bg-image-section__overlay" style={{ background: "rgba(0,0,0,0.4)" }} />
+            <div
+              className="bg-image-section__content"
+              style={{ maxWidth: "var(--max-width-wide)" }}
+            >
+              <ScrollReveal>
+                <h3 className="heading-section" style={{ marginBottom: 16 }}>
+                  現場を知る教員 × プログラミングスキル × 組織開発の知見
+                </h3>
+                <p
+                  className="text-body-large"
+                  style={{ color: "var(--color-text-secondary)" }}
+                >
+                  実践的で持続可能なDXソリューション
                 </p>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
+        </ScrollReveal>
+
+        {/* Feature Cards */}
+        <div className="feature-grid">
+          {/* Tech Skills */}
+          <ScrollReveal delay={0}>
+            <div className="feature-card">
+              <span className="feature-card__icon" role="img" aria-label="Code">
+                &#60;/&#62;
+              </span>
+              <h4 className="feature-card__title">プログラミング</h4>
+              <p className="feature-card__text">
+                Google Apps Script (GAS)・JavaScript・HTML/CSS。
+                スプレッドシート連携から本格的なWebアプリまで。
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.1}>
+            <div className="feature-card">
+              <span className="feature-card__icon" role="img" aria-label="AI">
+                AI
+              </span>
+              <h4 className="feature-card__title">AI・ツール活用</h4>
+              <p className="feature-card__text">
+                Gemini CLI・ChatGPT・Cursor・Obsidian。
+                最新AIを教育現場に実装する知見。
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.2}>
+            <div className="feature-card">
+              <span className="feature-card__icon" role="img" aria-label="Education">
+                &#x1F393;
+              </span>
+              <h4 className="feature-card__title">教科・指導</h4>
+              <p className="feature-card__text">
+                社会科専門・自己調整学習・自由進度学習・ICT活用授業。
+                10年以上の実践知。
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.3}>
+            <div className="feature-card">
+              <span className="feature-card__icon" role="img" aria-label="Organization">
+                &#x1F3DB;
+              </span>
+              <h4 className="feature-card__title">校務・組織開発</h4>
+              <p className="feature-card__text">
+                生徒指導・校内研修企画・校務文書作成・学年運営。
+                教職大学院での組織開発研究。
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
 
-        {/* 対応可能領域 */}
-        <div className="row mt-5">
-          <div className="col-lg-8 mx-auto text-center">
-            <h4 className="fw-bold mb-4">対応可能な領域</h4>
-            <div className="row">
-              <div className="col-md-4 mb-3">
-                <div className="p-3 bg-white rounded shadow-sm">
-                  <h6 className="fw-bold text-primary">業務効率化</h6>
-                  <small>校務DX・自動化・働き方改革</small>
-                </div>
-              </div>
-              <div className="col-md-4 mb-3">
-                <div className="p-3 bg-white rounded shadow-sm">
-                  <h6 className="fw-bold text-primary">研修・講演</h6>
-                  <small>ICT活用・AI導入・組織開発</small>
-                </div>
-              </div>
-              <div className="col-md-4 mb-3">
-                <div className="p-3 bg-white rounded shadow-sm">
-                  <h6 className="fw-bold text-primary">コンサル</h6>
-                  <small>教育DX・システム導入支援</small>
-                </div>
-              </div>
+        {/* Available Areas */}
+        <ScrollReveal style={{ marginTop: 80 }}>
+          <div style={{ textAlign: "center" }}>
+            <h4 className="heading-sub" style={{ marginBottom: 32 }}>
+              対応可能な領域
+            </h4>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: 16,
+                flexWrap: "wrap",
+              }}
+            >
+              {["業務効率化・校務DX", "研修・講演", "教育DXコンサル"].map(
+                (label) => (
+                  <span
+                    key={label}
+                    style={{
+                      padding: "10px 24px",
+                      borderRadius: 980,
+                      border: "1px solid rgba(255,255,255,0.12)",
+                      fontSize: "0.9rem",
+                      color: "var(--color-text-secondary)",
+                    }}
+                  >
+                    {label}
+                  </span>
+                )
+              )}
             </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );
