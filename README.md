@@ -1,5 +1,19 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Project Overview
+
+**sasa_lp** is a portfolio/landing page for **Hiroki Sasazawa (笹澤 弘紀 / ささ)**, an elementary school teacher and Education DX practitioner.
+The site showcases his work, media appearances, and mission to improve the educational field through technology (GAS, AI, etc.).
+
+## Technology Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: CSS Modules / Bootstrap (v5.3.7)
+- **Libraries**:
+    - `react` / `react-dom` (v19.1.0)
+    - `eslint` (v9)
+
 ## Getting Started
 
 First, run the development server:

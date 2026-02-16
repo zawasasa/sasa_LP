@@ -42,11 +42,13 @@ const Profile = () => {
                 @zawasasa
               </p>
               <h3 className="heading-section" style={{ marginBottom: 16 }}>
-                ささ
+                笹澤 弘紀 (ささ)
               </h3>
               <p className="text-body-large" style={{ color: "var(--color-text-secondary)", marginBottom: 0 }}>
-                小学校教員として10年以上の現場経験を持ちながら、独学でプログラミングを習得。
-                「現場の困りごと」を技術で解決することをライフワークとしています。
+                現役小学校教員（教職歴10年以上）でありながら、Google Apps Script (GAS) や生成AI（Gemini, NotebookLM等）を駆使して教育現場の課題を解決する「教育DX」の実践者。
+                <br />
+                <br />
+                「現場の困りごと」を技術で解決することをライフワークとし、そのノウハウをnote、書籍、メディアを通じて発信しています。
               </p>
             </ScrollReveal>
 
@@ -57,11 +59,11 @@ const Profile = () => {
                   <div className="profile-info-item__content">
                     小学校教諭（社会科専門）
                     <br />
-                    教職大学院修了
+                    教職大学院修了（学校組織開発）
                     <br />
-                    学校組織開発の研究・論文執筆
+                    明治図書『授業力&学級経営力』寄稿
                     <br />
-                    校内研修・生徒指導経験豊富
+                    テレビ東京『WBS』出演
                   </div>
                 </div>
               </ScrollReveal>
