@@ -14,18 +14,13 @@ export default function BackToTop() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  if (!visible) return null;
-
   return (
     <button
       aria-label="ページ先頭へ戻る"
-      className="btn btn-primary position-fixed"
-      style={{ right: 16, bottom: 16, zIndex: 1030 }}
+      className={`back-to-top ${visible ? "back-to-top--visible" : ""}`}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
     >
-      <i className="bi bi-arrow-up" />
+      &#x2191;
     </button>
   );
 }
-
-

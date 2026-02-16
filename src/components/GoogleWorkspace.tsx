@@ -1,82 +1,77 @@
-import React from 'react';
+import React from "react";
+import ScrollReveal from "./ScrollReveal";
 
 const GoogleWorkspace = () => {
   return (
-    <section id="google-workspace" className="py-5">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-8 mx-auto text-center">
-            <h2 className="fw-bold mb-3">Google Workspace 活用</h2>
-            <p className="lead text-muted mb-5">
-              現場の “ちょっと困った” を、普段使いのツールで即解決
-            </p>
+    <section id="google-workspace" className="lp-section lp-section--alt">
+      <div className="lp-container">
+        {/* Section Header */}
+        <ScrollReveal>
+          <div style={{ textAlign: "center", marginBottom: 64 }}>
+            <p className="text-overline">Google Workspace</p>
+            <h2 className="heading-large">
+              現場の &ldquo;ちょっと困った&rdquo; を、
+              <br />
+              普段使いのツールで即解決。
+            </h2>
           </div>
-        </div>
-        
-        <div className="row">
+        </ScrollReveal>
+
+        {/* Workspace Cards */}
+        <div className="workspace-cards">
           {/* Google Sheets */}
-          <div className="col-lg-6 mb-4">
-            <div className="card h-100 shadow-sm">
-              <div className="card-body">
-                <h4 className="card-title text-success fw-bold">
-                  <i className="bi bi-file-earmark-spreadsheet me-2"></i>Google Sheets
-                </h4>
-                <p className="card-text">
-                  データ整形・集計から、GAS(Google Apps Script)と連携した高度な自動化まで対応します。
-                </p>
-                <h6 className="fw-bold mt-4">できること</h6>
-                <ul className="list-unstyled">
-                  <li><i className="bi bi-check-circle-fill text-success me-2"></i>データ整形・集計、結合・正規化</li>
-                  <li><i className="bi bi-check-circle-fill text-success me-2"></i>Googleフォームと連携した管理台帳作成</li>
-                  <li><i className="bi bi-check-circle-fill text-success me-2"></i>条件付き書式による自動チェック・強調</li>
-                  <li><i className="bi bi-check-circle-fill text-success me-2"></i>GAS連携によるWebアプリ化・外部連携</li>
-                </ul>
-                <div className="mt-4">
-                  <a 
-                    href="https://note.com/hiroki_sasazawa/n/nf42de9823c44" 
-                    className="btn btn-outline-success btn-sm"
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    aria-label="スプレッドシート活用事例を見る (noteへ)"
-                  >
-                    活用事例を見る <i className="bi bi-box-arrow-up-right ms-1"></i>
-                  </a>
-                </div>
+          <ScrollReveal delay={0} direction="left" distance="40px">
+            <div className="workspace-card workspace-card--sheets">
+              <div className="workspace-card__icon">&#x1F4CA;</div>
+              <h3 className="workspace-card__title">Google Sheets</h3>
+              <p className="workspace-card__desc">
+                データ整形・集計から、GAS と連携した高度な自動化まで対応します。
+              </p>
+              <ul className="workspace-card__features">
+                <li>データ整形・集計、結合・正規化</li>
+                <li>Google フォームと連携した管理台帳作成</li>
+                <li>条件付き書式による自動チェック・強調</li>
+                <li>GAS連携によるWebアプリ化・外部連携</li>
+              </ul>
+              <div style={{ marginTop: 24 }}>
+                <a
+                  href="https://note.com/hiroki_sasazawa/n/nf42de9823c44"
+                  className="btn-ghost"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  活用事例を見る
+                </a>
               </div>
             </div>
-          </div>
-          
+          </ScrollReveal>
+
           {/* Google Docs */}
-          <div className="col-lg-6 mb-4">
-            <div className="card h-100 shadow-sm">
-              <div className="card-body">
-                <h4 className="card-title text-primary fw-bold">
-                  <i className="bi bi-file-earmark-text me-2"></i>Google Docs
-                </h4>
-                <p className="card-text">
-                  文書テンプレートの自動生成や差込印刷など、ドキュメント作成の手間を大幅に削減します。
-                </p>
-                <h6 className="fw-bold mt-4">できること</h6>
-                <ul className="list-unstyled">
-                  <li><i className="bi bi-check-circle-fill text-primary me-2"></i>テンプレートからの文書自動生成</li>
-                  <li><i className="bi bi-check-circle-fill text-primary me-2"></i>スプレッドシートのデータを一括差込</li>
-                  <li><i className="bi bi-check-circle-fill text-primary me-2"></i>複数ドキュメントのPDF一括出力</li>
-                  <li><i className="bi bi-check-circle-fill text-primary me-2"></i>GASによる印刷範囲の最適化</li>
-                </ul>
-                <div className="mt-4">
-                  <a 
-                    href="https://note.com/hiroki_sasazawa/n/n75b05df104d8" 
-                    className="btn btn-outline-primary btn-sm"
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    aria-label="Googleドキュメント活用事例を見る (noteへ)"
-                  >
-                    活用事例を見る <i className="bi bi-box-arrow-up-right ms-1"></i>
-                  </a>
-                </div>
+          <ScrollReveal delay={0.15} direction="right" distance="40px">
+            <div className="workspace-card workspace-card--docs">
+              <div className="workspace-card__icon">&#x1F4DD;</div>
+              <h3 className="workspace-card__title">Google Docs</h3>
+              <p className="workspace-card__desc">
+                文書テンプレートの自動生成や差込印刷など、ドキュメント作成の手間を大幅に削減します。
+              </p>
+              <ul className="workspace-card__features">
+                <li>テンプレートからの文書自動生成</li>
+                <li>スプレッドシートのデータを一括差込</li>
+                <li>複数ドキュメントのPDF一括出力</li>
+                <li>GASによる印刷範囲の最適化</li>
+              </ul>
+              <div style={{ marginTop: 24 }}>
+                <a
+                  href="https://note.com/hiroki_sasazawa/n/n75b05df104d8"
+                  className="btn-ghost"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  活用事例を見る
+                </a>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
